@@ -1,0 +1,29 @@
+/* pages/index_details2/index_details2.wxss */
+
+.detail{
+    width: 95%;
+    margin-left: 2.5%;
+    border: 2px solid black;
+    border-radius:10px;
+}
+.demo{
+    display: flex;
+    width: 500%;
+    height: 80px;
+    /* background-color: sandybrown; */
+    text-align: center;
+    border: 2px solid black;
+    border-radius:10px;
+}
+.demo_item{
+    width: 250px;
+    height: 200px;
+    /* margin-bottom: 10px; */
+    float: left;
+    font-size:16px;
+    text-align: center;
+}
+.item{
+    text-align: center;
+    width: 200px;
+}

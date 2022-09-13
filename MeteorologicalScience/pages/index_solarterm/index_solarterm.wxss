@@ -1,0 +1,55 @@
+/* pages/index_solarterm/index_solarterm.wxss */
+.main{
+    height: 800px;
+    background-color: rgb(223, 223, 223);
+}
+.video{
+    height: 240px;
+    width: 95%;
+    margin-left: 2.5%;
+    padding-top: 10px;
+}
+.video video{
+    width: 100%;
+    border-radius: 10px;
+}
+.mid{
+    display: flex;
+    width: 95%;
+    height: 200px;
+    margin-left: 2.5%;
+    background-color: rgb(138, 138, 138);
+    border: brown 1px solid;
+    border-radius: 10px;
+}
+.left{
+    width: 40%;
+    height: 80%;
+    margin-top: 15px;
+    border-right: solid black 2px;
+    text-align: center;
+    font-size: large;
+}
+.right{
+    height: 80%;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: large;
+}
+
+/* story */
+.story{
+    font-size: 20px;
+    width: 95%;
+    height: max-content;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    background-color: rgb(112, 112, 112);
+    border: brown 1px solid;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+.toptext{
+    font-size: 25px;
+    font-family: '楷体';
+}

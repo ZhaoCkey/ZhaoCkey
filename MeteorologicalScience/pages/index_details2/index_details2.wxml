@@ -1,0 +1,111 @@
+<!--pages/index_details2/index_details2.wxml-->
+<text>7天天气详情</text>
+<view class="detail">
+<scroll-view scroll-x="true">
+    <view wx:for="{{details}}" class="demo">
+        <view class="demo_item">
+            <view> 预报日期:</view>
+            <view>{{item.fxDate}}</view>
+        </view>
+        <view class="demo_item">
+            <view class="item">日出时间:</view>
+            <view>{{item.sunrise}}</view> 
+        </view>
+        <view class="demo_item">
+            <view>日落时间:</view>
+            <view>{{item.sunset}}</view>
+        </view> 
+        <view class="demo_item">
+            <view> 月相名称:</view>
+            <view>{{item.moonPhase}}</view>
+        </view>
+        <view class="demo_item">
+            <view>月相:</view>
+            <image src="../../icons/{{item.moonPhaseIcon}}.svg" style="width: 38px;height: 38px;"></image>
+        </view>
+        
+        <view class="demo_item">
+            <view> 月升时间:</view>
+            <view>{{item.moonrise}}{{item.wind360}}°</view>
+        </view>
+        <view class="demo_item">
+            <view> 月落时间:</view>
+            <view>{{item.moonset}}级</view>
+        </view>
+        
+        <view class="demo_item">
+            <view> 最高气温:</view>
+            <view>{{item.tempMax}}%</view>
+        </view>
+        <view class="demo_item">
+            <view> 最低气温:</view>
+            <view>{{item.tempMin}}mm</view>
+        </view>
+        <view class="demo_item">
+            <view> 白天:</view>
+            <view>{{item.textDay}}%</view>
+        </view>
+        <view class="demo_item">
+            <view>白天图:</view>
+            <image src="../../icons/{{item.iconDay}}.svg" style="width: 38px;height: 38px;"></image>
+        </view>
+        <view class="demo_item">
+            <view> 夜晚:</view>
+            <view>{{item.textNight}}%</view>
+        </view>
+        <view class="demo_item">
+            <view>夜晚图:</view>
+            <image src="../../icons/{{item.iconNight}}.svg" style="width: 38px;height: 38px;"></image>
+        </view>
+        <view class="demo_item">
+            <view> 风向(日间):</view>
+            <view>{{item.windDirDay}}{{item.wind360Day}}°</view>
+        </view>
+        <view class="demo_item">
+            <view> 风力等级(日间):</view>
+            <view>{{item.windScaleNight}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 风速(夜间):</view>
+            <view>{{item.windSpeedNight}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 风向(夜间):</view>
+            <view>{{item.windDirNight}}{{item.wind360Night}}°</view>
+        </view>
+        <view class="demo_item">
+            <view> 风力等级(夜间):</view>
+            <view>{{item.windScaleNight}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 风速(夜间):</view>
+            <view>{{item.windSpeedNight}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 湿度:</view>
+            <view>{{item.humidity}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 紫外线强度:</view>
+            <view>{{item.uvIndex}}</view>
+        </view>
+        <view class="demo_item">
+            <view> 降水量:</view>
+            <view>{{item.precip}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 大气压强:</view>
+            <view>{{item.pressure}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 能见度:</view>
+            <view>{{item.vis}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 云量:</view>
+            <view>{{item.cloud}}级</view>
+        </view>
+    </view>
+</scroll-view>    
+</view>
+

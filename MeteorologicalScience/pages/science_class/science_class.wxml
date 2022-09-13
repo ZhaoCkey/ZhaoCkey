@@ -1,0 +1,32 @@
+<!--pages/science_class/science_class.wxml-->
+<view class="main">
+<!-- top -->
+    <view class="top">
+    
+    <view wx:for="{{name}}" class="button">
+        <view bindtap="tapEvent_selectClass" data-name="{{item}}" style="margin-top: 5px;">
+            {{item}}
+        </view>
+    </view>
+    </view>
+<!-- mid --> 
+<view class="mid">
+    <view wx:for="{{type}}" class="button2" bindtap="tapEvent_selectDetails" data-type="{{item.title}}">
+        <view  class="item">{{item.title}}</view>
+    </view>
+</view>
+<!-- bottom -->
+<view class="bottom">
+    <view wx:for="{{details}}" class="bottom2">
+        <view class="left">
+            <image src="../../images/{{item.image}}.jpg" class="img"></image>
+        </view>
+        <view class="right">
+            <view>{{item.title}}</view>
+            <view>{{item.content}}</view>
+        </view>
+        
+    </view>
+</view>
+
+</view>

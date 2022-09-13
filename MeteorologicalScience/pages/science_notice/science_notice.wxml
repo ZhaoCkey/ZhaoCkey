@@ -1,0 +1,7 @@
+<!--pages/science_notice/science_notice.wxml-->
+<view style="background-color: rgb(233, 232, 232);width: 100%;height: 750px;">
+<view >
+    <view style="color: rgb(0, 0, 0);font-size: 26px; text-align: center;font-family: '楷体';margin-bottom: 20px;">{{title}}</view>
+    <view style="font-size: 18px; ">{{content}}</view>
+</view>
+</view>

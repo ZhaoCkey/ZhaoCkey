@@ -1,0 +1,33 @@
+<!--pages/index_solarterm/index_solarterm.wxml-->
+<view class="main">
+    <!-- video——节气视频 -->
+    <view class="video">
+        <video src="{{video_url}}"></video>
+    </view>
+    <!-- data——日期 -->
+    <view  class="mid" >
+        <view class="left">
+            <view>时间{{details.date}}</view>
+            
+        </view>
+        <view class="right">
+            <view>{{details.jianjie}}</view>
+        </view>
+    </view>
+    <!-- story_节气故事 -->
+    <view class="story" style="background-image: {{}};" bindtap="tapEvent_story">
+        <view class="toptext">习俗</view>
+        <view style="border-bottom: 1px black solid;"></view>
+        <view >{{details.xisu}}</view>
+    </view>
+    <view class="story">
+        <view class="toptext">由来</view>
+        <view style="border-bottom: 1px black solid;"></view>
+        <view>{{details.youlai}}</view>
+    </view>
+    <view class="story">
+        <view class="toptext">养生</view>
+        <view style="border-bottom: 1px black solid;"></view>
+        <view>{{details.yangsheng}}</view>
+    </view>
+</view>

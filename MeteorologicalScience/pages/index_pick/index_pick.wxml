@@ -1,0 +1,23 @@
+<!--pages/index_pick/index_pick.wxml-->
+<!-- locationCity -->
+<view class="main_top">
+    <view class="local" >
+        <view class="left_loc" bindtap="tapEvent_location">定位</view>
+        <!-- <view class="mid_loc">图</view> -->
+        <view class="right_loc">
+            <view bindtap="tapEvent_location">{{location}}</view>
+            <view>{{location_city}} {{location_area}}</view>
+        </view>
+    </view>
+    <!-- citys -->
+    <view wx:for="{{citys}}" class="citys">
+        <view class="left">{{item.city_name}}</view>
+        <view bindtap="tapEvent_deleteCity" class="right" data-city="{{item.city_name}}"><image src="../../images/删除.png" style="width: 50px;height: 50px;"></image></view>
+    </view>
+</view>
+<!-- 添加按钮 -->
+<view class="add">
+    <picker mode="region" bindchange="selectEvent" >
+        <image src="../../images/加.png"></image>
+    </picker>
+</view>

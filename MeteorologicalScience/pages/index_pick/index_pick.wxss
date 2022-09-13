@@ -1,0 +1,60 @@
+/* pages/index_pick/index_pick.wxss */
+/*.main_top{
+     display: flex;
+    width: 375px;
+    background-color: rgb(228, 224, 224); 
+}*/
+/* local_city */
+.local{
+    width: 90%;
+    margin-left: 5%;
+    height: 80px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(185, 185, 185);
+}
+.left_loc{
+    margin-top: 30px;
+    margin-left: 180rpx;
+
+}
+.mid_loc {
+    margin-top: 30px;
+    margin-left: 140rpx;
+}
+.right_loc{
+    margin-top: 30px;
+    margin-left: 200rpx;
+    text-align: center;
+}
+/* citys */
+.citys{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    height: 80px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(189, 189, 189);
+    text-align: center
+}
+.left{
+    margin-top: 30px;
+    margin-left: 200rpx;
+}
+.right{
+    margin-top: 20px;
+    margin-left: 200rpx;
+}
+/* ADD按钮 */
+.add{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 46%;
+}
+.add picker image{
+    width: 60rpx;
+    height: 60rpx;
+}

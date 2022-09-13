@@ -1,0 +1,58 @@
+<!--pages/index_details/index_details.wxml-->
+<text>24小时天气详情</text>
+<view class="detail">
+<scroll-view scroll-x="true">
+    <view wx:for="{{details}}" class="demo">
+        
+        <view class="demo_item">
+            <view> 时间:</view>
+            <view>{{item.fxTime}}</view>
+        </view>
+        <view class="demo_item">
+            <view class="item"> 温度:</view>
+            <view>{{item.temp}}℃</view> 
+        </view>
+        <view class="demo_item">
+        <image src="../../icons/{{item.icon}}.svg" style="width: 38px;height: 38px;"></image>
+        </view>
+        <view class="demo_item">
+            <view></view>
+            <view>{{item.text}}</view>
+        </view> 
+        <view class="demo_item">
+            <view> 风向:</view>
+            <view>{{item.windDir}}{{item.wind360}}°</view>
+        </view>
+        <view class="demo_item">
+            <view> 风力:</view>
+            <view>{{item.windScale}}级</view>
+        </view>
+        <view class="demo_item">
+            <view> 风速:</view>
+            <view>{{item.windSpeed}}</view>
+        </view>
+        <view class="demo_item">
+            <view> 湿度:</view>
+            <view>{{item.humidity}}%</view>
+        </view>
+        <view class="demo_item">
+            <view> 降水量:</view>
+            <view>{{item.precip}}mm</view>
+        </view>
+        <view class="demo_item">
+            <view> 降水概率:</view>
+            <view>{{item.pop}}%</view>
+        </view>
+        <view class="demo_item">
+            <view> 大气压强:</view>
+            <view>{{item.pressure}}</view>
+        </view>
+        <view class="demo_item">
+            <view> 云量:</view>
+            <view>{{item.cloud}}%</view>
+        </view>
+        
+    </view>
+</scroll-view>    
+</view>
+

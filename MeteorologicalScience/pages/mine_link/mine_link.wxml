@@ -1,0 +1,14 @@
+<!--pages/mine_link/mine_link.wxml-->
+<!-- <text>pages/mine_link/mine_link.wxml</text> -->
+<view style="width: 95%;">
+<view style="text-align: center;font-family: '楷体';font-size: 20px;">友情链接</view>
+    <view wx:for="{{links}}" bindtap="linkTo" data-url="{{item.url}}" style="margin-top: 5px;border-bottom: rgb(100, 178, 255) solid 1px;">
+        <view>{{item.title}}:
+            <a href="{{item.url}}">{{item.url}}</a>
+        </view>
+    
+    
+    </view>
+
+
+</view>

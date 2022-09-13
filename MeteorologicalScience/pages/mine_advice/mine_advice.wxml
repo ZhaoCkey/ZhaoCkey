@@ -1,0 +1,14 @@
+<!--pages/mine_advice/mine_advice.wxml-->
+<view class="main">
+<form bindsubmit="submit">
+    <view class="title">
+        <view>标题：</view>
+        <input type="text" placeholder="title" name="title" style="border: solid 1px black; border-radius: 10px;width:95%; margin-left:2.5%"/>
+    </view>
+    <view class="content">
+        <view>内容：</view>
+        <input type="text" name="content" style="border: solid 1px black;border-radius: 10px;width:95%; margin-left:2.5%;height:350px"/>
+    </view>
+    <button form-type="submit" style="text-align: center;">反馈</button>
+</form>
+</view>

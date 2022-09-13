@@ -1,0 +1,96 @@
+<!-- 城市选择栏 -->
+<view class="city">
+  <view class="pick" bindtap="pickCity">
+    <image src="../../images/更多.svg" style="width: 25px; height: 25px;"></image>
+  </view>
+  <view class="citys" bindtap="tapEvent_changeCity" data-city="{{localCity}}">{{localCity}}</view>
+  <view wx:for="{{citys}}" class="citys" bindtap="tapEvent_changeCity" data-city="{{item.city_name}}">
+        {{item.city_name}}
+  </view>
+  <!-- 添加点击事件———点击后setdata将nowcity设置成这儿的city -->
+</view>
+<!-- 天气展示栏 -->
+<view class="backgrond" style="background-image: url('{{backgroundImg}}');">
+<view class="weather">
+  <view class="content">
+    <view class="warnings" >
+      <view wx:for="{{warning}}">
+        <view class="warning" bindtap="tapEventwarning" data-text="{{item.text}}">{{item.typeName}}{{item.level}}预警</view>
+      </view>
+    </view>
+    <view class="all">
+        <view class="left">{{temp}}</view>
+        <text class="mid">℃</text>
+        <view class="right">
+            <view class="top">
+                <view class="weather_top">
+          <image wx:if="{{icon}}"src="../../icons/{{icon}}.svg" style="width: 25px;height: 25px;"></image>
+          <view style="font-size: 20px; margin-left: 10px;">{{text}}</view>
+                </view>
+                <view class="air_top">
+          <!-- <image src="../../images/"></image> -->
+          <view >{{}}</view>
+                </view>
+            </view>
+            <view class="bottom">
+                <view class="wind">{{wind}}级</view>
+                <view class="humidity">湿度:{{humidity}}</view>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+</view>
+<!-- 24小时预报 -->
+<view class="time_24">
+    <view style="font-size: 18px; margin-bottom: 8px; border-bottom: 1px black solid;">24小时预报</view>
+    <scroll-view class="scroll" scroll-x="true">
+        <view wx:for="{{time_24}}" class="demo1"  bindtap="tapEvent_24details" data-details="{{time_24}}">
+                <view class="demo1_item">{{item.fxTime}}</view>
+                <view class="demo1_item">{{item.temp}}℃</view>
+                <view class="demo1_item"><image src="../../icons/{{item.icon}}.svg" style="width: 30px;height: 30px;"></image></view>
+                <view class="demo1_item">{{item.text}}</view> 
+                <view class="demo1_item">{{item.windDir}}</view>
+        </view>
+    </scroll-view>
+    <view></view>
+</view>
+<!-- 气象视频 -->
+<view class="video_main" >
+    <view style="font-size: 18px; border-bottom: 1px black solid;">气象视频</view>
+    <view >
+        <video class="video" src="{{index_video}}"></video>
+    </view>
+</view>
+<!-- 7天预报 -->
+<view class="day_7">
+    <view style="font-size: 18px; margin-bottom: 8px; border-bottom: 1px black solid;">7天预报</view>
+    <scroll-view class="scroll_day" scroll-x="true" >
+        <view wx:for="{{day_7}}" class="demo2" bindtap="tapEvent_7details" data-details="{{day_7}}">
+                <view class="demo1_item">{{item.fxDate}}</view>
+                <view class="demo1_item">{{item.tempMax}}℃</view> 
+                <view class="demo1_item">{{item.tempMin}}℃</view> 
+                <view class="demo1_item"> <image src="../../icons/{{item.iconDay}}.svg" style="width: 20px;height: 20px;"></image></view>   
+                <view class="demo1_item">{{item.textDay}}</view>
+        </view>
+    </scroll-view>
+</view>
+<!-- 二十四节气 -->
+<view bindtap="tapEvent_st" class="solarterm" style="background-image: src('{{backgroundImg_st}}');" data-st="{{jieqiname}}">
+    <view style="font-size: 18px; border-bottom: 1px black solid;">24节气</view>
+    <view class="content_st" >
+        <view style="font-size: 30px; font-family: '楷体';">{{jieqiname}}</view>
+        <view>{{time}}</view>
+        <view>农历{{nongli}}</view>
+    </view>
+</view>
+<!-- 生活指数 -->
+<view class="livingIndex">
+    <view style="font-size: 18px; border-bottom: 1px black solid;">生活指数</view>
+    <view class="living_group" >
+        <view class="group" wx:for="{{white}}" bindtap="tapEvent_living" data-tname="{{item.title}}">
+            <image class="image" src="{{item.image}}"></image>
+            <view class="title">{{item.title}}</view><!--点击事件，点击后弹窗显示详情-->
+        </view>    
+    </view>
+</view>

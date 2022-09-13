@@ -1,0 +1,126 @@
+/* pages/science/science.wxss */
+.main{
+    background-color: rgb(228, 224, 224);
+    height:3000px;
+    /* 高度控制两个swiper的高度 */
+  }
+  .img_swiper{
+    width: 100%;
+    height:160px;
+  }
+
+  .main_news{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(230, 230, 230);
+  }
+  .content{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px #ccc solid;
+    padding: 15px;
+    background-color: rgb(194, 194, 194);
+    margin-bottom: 5px;
+    box-sizing: border-box; /*以盒子外边为边距，解决文字超出屏幕*/
+  }
+  /* .c_title{
+    font-size: 12px;
+    display: flex;
+    float: left;
+    margin-top: 10px;
+  } */
+  .left{
+    float: left;
+    height: 85px;
+    width: 220px;
+    /* background-color: aqua; */
+    position:relative;
+  }
+  .right{
+    width: 100px;
+    height: 100%;
+    height: 80px;
+    float: right;
+  }
+  /* .right image{} */
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .title{
+    color: rgb(75, 75, 75);
+    font-size: 14px;
+    /* margin-bottom: 40px; */
+  }
+  .cname{
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0px;
+   } 
+  /* .caddress{
+    color:rgb(71, 65, 65);
+    font-size: 13px;
+    float: right;
+    margin-top: 14px;
+  
+  } */
+  /* 搜索框 */
+  .top{
+    display: flex;
+    background-color: rgb(228, 224, 224);
+  }
+  .input{
+    margin-left: 16rpx;
+    width: 88%;
+    height: 60rpx;
+    background-color: white;
+    border-radius:20px;
+    
+  }
+  .image_top{
+    margin-left: 2px;
+    width: 70rpx;
+    height: 70rpx;
+  }
+               /* mid */
+  .mid{
+    width: 100%;
+    height: 160rpx;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    text-align: center;
+    /* border: #aaa solid; */
+  }
+  .mid_button{
+    width: 150rpx;
+    height:150rpx;
+    flex-wrap: wrap;
+    margin: 5px;
+    flex-shrink: 0;
+  }
+  .mid_image{
+    /* margin-left: 4rpx; */
+    width: 100rpx;
+    height: 100rpx;
+  }
+  .cutter{
+    background-color: rgb(241, 240, 240);
+    width: 100%;
+    height: 10rpx;
+  }
+                                     /* 视频 */
+/* .main_video{
+
+} */
+.title{
+    text-align: center;
+    font-size: 18px;
+}
+.video{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 5px;
+}

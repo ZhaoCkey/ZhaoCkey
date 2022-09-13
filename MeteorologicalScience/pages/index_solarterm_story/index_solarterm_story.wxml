@@ -1,0 +1,28 @@
+<!--pages/index_solarterm_story/index_solarterm_story.wxml-->
+<view class="main">
+    <view class="top" style="background-image: {{}};">
+    </view>
+    <view class="mid">
+        <view class="title"><text>节气简介</text></view>
+        <view style="border: solid 0.5px black; margin: 8px 5px;"></view>
+        <view class="name">节气名称：{{}}</view>
+        <view class="time">节气时间：{{}}</view>
+        <view class="feature">气候特征：{{}}</view>
+        <view style="border: solid 0.5px black; margin: 8px 5px;"></view>
+        <view class="mean">俗语111111111111111111111111111111111111111222221111111111111111111111111111111{{}}</view>
+    </view>
+    <view class="mid2">
+        <view class="title"><text>节气气候</text></view>
+        <view style="border: solid 0.5px black; margin: 8px 5px;"></view>
+        <view class="name">节气名称：{{}}</view>
+
+    </view>
+    <view class="mid2">
+        <view class="title"><text>节气习俗</text></view>
+        <view style="border: solid 0.5px black; margin: 8px 5px;"></view>
+        <view class="name">节气名称：{{}}</view>
+
+    </view>
+
+
+</view>

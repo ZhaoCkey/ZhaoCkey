@@ -1,0 +1,2 @@
+<!--pages/mine_weather/mine_weather.wxml-->
+<web-view src="https://www.tianqi.com/wxyt"></web-view>
