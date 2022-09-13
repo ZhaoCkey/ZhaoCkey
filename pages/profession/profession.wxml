@@ -1,0 +1,15 @@
+<view class="main">
+
+<view class="content" wx:for="{{news}}" bindtap="tapEvent" data-cid="{{item.cid}}" data-title="{{item.title}}" data-author="{{item.author}}" data-time="{{item.time}}" data-content="{{item.content}}" data-photo="{{item.photo}}">
+
+<view class="right" > 
+    <view class="title">{{item.jobname}}</view>
+    <view class="c_title">{{item.c_title}}</view>
+    <view class="cname">{{item.cname}}</view>
+    <view class="caddress">{{item.caddress}}</view>
+</view>
+<view class="left">  
+    <image class="image" src="{{item.imgurl}}"></image>
+</view>
+</view>
+</view>

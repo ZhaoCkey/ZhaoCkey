@@ -1,0 +1,20 @@
+/* pages/myself_message_perfect/myself_message.wxss */
+.main{
+    width: 95%;
+    border: 1px solid #ccc ;
+    margin: 20rpx auto;
+    text-align: left;
+}
+.content input{
+    border: 1px #aaa solid;
+}
+.title{
+    font-size: 32rpx;
+    color: red;
+    text-align: center;
+    line-height: 80rpx;
+}
+button{
+    /* background-color: aqua; */
+    width: 200rpx;
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myself/myself",
+    "pages/profession/profession",
+    "pages/profession_edit/profession_edit",
+    "pages/myself_message/myself_message",
+    "pages/myself_message_perfect/myself_message",
+    "pages/index_noticeTo/index_noticeTo",
+    "pages/index_newTo/index_newTo",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#07AF8B",
+    "navigationBarTitleText": "人人招聘",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor": "#666"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#33ccff",
+    "backgroundColor": "eee",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/首页.png",
+      "selectedIconPath": "/images/首页2.png"
+    },
+    {
+      "pagePath": "pages/profession/profession",
+      "text": "言职",
+      "iconPath": "/images/收藏.png",
+      "selectedIconPath": "/images/收藏2.png"
+    },
+    {
+      "pagePath": "pages/myself/myself",
+      "text": "我的",
+      "iconPath": "/images/我的.png",
+      "selectedIconPath": "/images/我的2.png"
+    }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

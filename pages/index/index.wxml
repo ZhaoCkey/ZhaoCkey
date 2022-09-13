@@ -1,0 +1,44 @@
+<!--设置横向滚动：1、scroll—x属性为true；2、内容的display为inline-block；3、外层容器的white-space为nowrap-->
+<!-- 搜索框 -->
+<view class="main">
+<view class="top">
+        <input class="input" type="text" placeholder="搜索"> </input>
+        <image class="image_top" src="/images/扫一扫.png" style="width: 24px;height: 24px;margin-top:3px;margin-left: 6px;"></image>
+</view>
+<!-- top-轮播 -->
+<swiper class="swiper" indicator-dots="true" indicator-color="greenyellow" 
+    indicator-active-color="cyan" autoplay="true" interval="2000" duration="1000"
+    circular="true" easing-function="linear" style="width: {{width*2}}rpx; height: {{height*2}}rpx;"
+    >
+    <swiper-item wx:for="{{imgUrl}}">
+      <!-- <navigator url='../index_noticeTo/index_noticeTo?data='+{{item}}> -->
+        <view bindtap="noticeTo">
+          <image src="{{item.imgurl}}" data-title='{{item.title}}' data-content='{{item.content}}' 
+          data-time='{{item.time}}' class="img_swiper">
+          </image>
+        </view> 
+      <!-- </navigator> -->
+    </swiper-item>
+</swiper>
+<!-- mid-按钮 -->
+<view class="mid">
+    <view class="mid_button" wx:for="{{mid}}">
+        <image class="mid_image" src="{{item.img_mid}}" bindtap="dontopen"></image>
+        <view class="mid_title">{{item.title}}</view>
+    </view>
+</view>
+<view class="cutter"></view>
+<!-- bottom-news -->
+<view class="content" wx:for="{{news}}" bindtap="tapEvent" data-cid="{{item.cid}}" data-title="{{item.title}}" data-author="{{item.author}}" data-time="{{item.time}}" data-content="{{item.content}}" data-photo="{{item.photo}}">
+
+    <view class="left" > 
+        <view class="title">{{item.jobname}}</view>
+        <view class="c_title">{{item.c_title}}</view>
+        <view class="cname">{{item.cname}}</view>
+        <view class="caddress">{{item.caddress}}</view>
+    </view>
+    <view class="right">  
+        <image class="image" src="{{item.imgurl}}"></image>
+    </view>
+</view>
+</view>

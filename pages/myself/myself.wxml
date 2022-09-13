@@ -1,0 +1,56 @@
+<!--pages/myself/myself.wxml-->
+<!--pages/mine/mine.wxml-->
+<view class="main">
+<!-- 登录框-->
+
+<view class="user">
+    <image bindtap="login" src="{{user_head}}" class="user_head"></image>
+    <view wx:if="{{!user_name}}" class="login" bindtap="login">未登录</view>
+    <view wx:else class="login">{{user_name}}</view>
+</view>
+<!-- 选项栏 -->
+<view class="option" >
+<view class="me" bindtap="mymessage" >
+    <view>
+    <image src="/images/简历.png"></image>
+    </view>
+    <view class="text_r">个人信息</view>
+   <navigator url="">
+   <view class="infobutton" style="margin-top: 8px;"hidden="{{isshow}}">去完善</view>
+   </navigator>
+</view>
+
+<view class="me" bindtap="dontopen">
+    <view>
+    <image src="/images/机会.png" ></image>
+    </view>
+    <view class="text_r">机会</view>
+    
+</view>
+
+<view class="me" bindtap="dontopen">
+    <view>
+    <image src="/images/收藏.png"></image>
+    </view>
+    <view class="text_r">收藏</view>
+    
+</view>
+
+<view class="me" bindtap="dontopen">
+    <view>
+    <image src="/images/意见反馈.png"  ></image>
+    </view>
+    <view class="text_r">意见反馈</view>
+    
+</view>
+<view class="me" bindtap="dontopen">
+    <view>
+    <image src="/images/设置.png"></image>
+    </view>
+    <view class="text_r">设置</view>
+    
+</view>
+</view>
+<button class="unlogin" type="warn" hidden="{{!user_name}}" bindtap="unlogin">退出登录</button>
+
+</view>

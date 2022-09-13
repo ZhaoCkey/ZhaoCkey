@@ -1,0 +1,68 @@
+/* pages/myself/myself.wxss *//* pages/mine/mine.wxss */
+.main{
+    width: 100%;
+    height:100%;
+    background-color: rgba(98, 98, 98, 0.041);
+}
+
+.user{
+    width: 100%;
+    margin: auto;
+    height: 300rpx;
+    background-color:rgb(7, 175, 139);
+}
+.login{
+    width: 100%;
+    height: 100rpx;
+    text-align:center;
+    font-size: 48rpx;
+    padding-top: 10rpx;
+}
+.user_head{
+    width:140rpx;
+    height:140rpx;
+    border:2px solid rgb(247, 247, 247);
+    background-color: #f1efef;
+    /* margin:20rpx 50rpx 0rpx 225rpx; */
+    margin-top: 20rpx;
+    margin-left: 298rpx;
+    border-radius: 50%;
+}
+.option{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: 20rpx;
+}
+.me {
+    height: 80rpx;
+    width: 100%;
+    font-size: larger;
+    border-bottom: rgba(169, 169, 169, 0.144) 1px solid;
+    display: flex;
+}
+.me image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.unlogin {
+    margin-top: 260rpx;
+    width: 90%;
+}
+.infobutton{
+   margin-left: 180px;
+   font-size: 15px;
+   border: green solid;
+   border-radius: 20px;
+   background-color: #07AF8B;
+}
+.option image{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+}
+.text_r{
+    margin-left: 20rpx;
+    margin-top: 8px;
+}

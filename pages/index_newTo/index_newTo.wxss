@@ -1,0 +1,29 @@
+/* pages/index_newTo/index_newTo.wxss */
+.main{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+.top{
+    height: 90px;
+}
+.jname{
+    font-size: 40px;
+    margin-left: 2px;
+    margin-top: 4px;
+}
+.name_address{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(182, 180, 180); 
+}
+.c_title{
+    margin-top: 40px;
+    font-size: 12px;
+}
+.img image{
+    width: 80px;
+    height: 80px;
+    text-align: left;
+    float: left;
+    margin-left: 2px;
+}

@@ -1,0 +1,8 @@
+<!--pages/index_noticeTo/index_noticeTo.wxml-->
+<!-- <text>pages/index_noticeTo/index_noticeTo.wxml</text> -->
+<view style="text-align: center; color: #aaa;font-size: 26px;">职位一览</view>
+<view>
+    <view style="font-size: 24px; color: rgb(71, 13, 26);">{{notice.title}}</view>
+    <view style="font-size: 14px;color: #aaa;">{{notice.time}}</view>
+    <view style="font-size: 18px; ">{{notice.content}}</view>
+</view>

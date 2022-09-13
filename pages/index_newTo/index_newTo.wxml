@@ -1,0 +1,19 @@
+<!--pages/index_newTo/index_newTo.wxml-->
+
+<view class="main">
+    <view class="jname">{{company.jobname}}</view>
+    <view class="top">
+        <view class="img">
+            <image src="{{company.imgurl}}"></image>
+        </view>
+        <view class="name_address">
+            <view>{{company.cname}}</view>
+            <view>{{company.caddress}}</view>
+        </view>
+        <view class="c_title">{{company.c_title}}</view>
+    </view>
+    <view style="font-size: 20px; color:lightslategray;">职业要求：</view>
+    <view class="requirement">{{company.requirement}}</view>
+    <view style="font-size: 20px; color:lightslategray;">待遇:</view>
+    <view class="treatment">{{company.treatment}}</view>
+</view>

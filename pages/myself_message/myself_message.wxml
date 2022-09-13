@@ -1,0 +1,39 @@
+<!--pages/myself_message/myself_message.wxml-->
+<!-- <text>pages/myself_message/myself_message.wxml</text> -->
+<!-- <view>上传头像</view> 
+<view>
+    <image src="" style="width: 100%;height: 100px;"></image>
+</view> -->
+
+<!--  -->
+<view style="font-size: 20px;margin-bottom: 4px;">基本信息</view> 
+<view wx:for="{{message}}">
+    <view>{{item.username}}</view>
+    <view >姓名：{{item.uname}}</view>
+    <view class="content">性别：{{item.sex}}</view>
+    <view class="content">学历：{{item.education}}</view>
+    <view class="content">工作时间：{{item.worktime}}</view>
+    <view class="content">城市：{{item.city}}</view>
+    <view class="content">电话：{{item.phone}}</view>
+    <view class="content">email：{{item.email}}</view>
+    <view class="content">介绍：{{item.description}}</view>
+    <button type="primary" bindtap="edit" data-username="{{item.username}}">编辑</button>
+</view>
+<view style="width: 100%;height: 2px; border-bottom: solid #aaa;"></view>
+<!--  -->
+<view style="display: flex; justify-content: space-between;">
+    <view>技能评价</view>
+    <!-- <view> -->
+    <!-- <view bindtap="edit_ability" style="color: blue;font-size: 14px;" wx:for="{{ability}}">编辑</view>
+    </view>
+    <navigator url="../profession_edit/profession_edit?"></navigator> -->
+</view>
+<form action="" bindsubmit="edit_ability">
+<view wx:for="{{ability}}">
+    <view name="jname">{{item.jname}}</view>
+    <progress show-info color="#ddd" stroke-width="30rpx" 
+    activeColor="green" percent="{{item.percent}}" border-radius="50">
+    </progress>
+</view>
+<button form-type="submit">编辑</button>
+</form>

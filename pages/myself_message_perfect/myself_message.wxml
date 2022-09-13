@@ -1,0 +1,41 @@
+<!--pages/myself_message_perfect/myself_message.wxml-->
+<!-- <text>pages/myself_message_perfect/myself_message.wxml</text> -->
+<form bindsubmit="submitEvent">
+    <view style="font-size: 20px; text-align: center;">个人信息编辑完善</view>
+    <view class="main" wx:for="{{message}}">
+        <input name="username" value="{{item.username}}" hidden="{false}"/>
+        <view class="content">
+            姓名：<input type="text" name="uname" type="text" value="{{item.uname}}"/>
+        </view>
+        <view class="content">
+            性别：<radio-group name="sex" class="c">
+                    <radio value="男" checked="{{item.sex=='男'?true:false}}">男</radio>
+                    <radio value="女" checked="{{item.sex=='女'?true:false}}">女</radio>
+                 </radio-group>
+        </view>
+        <view class="content">
+            学历：<input name="education" type="text" value="{{item.education}}" />
+        </view>
+        <view class="content">
+            工作年限：<input name="worktime" type="text" value="{{item.worktime}}" />
+        </view>
+        <view class="content">
+            所在城市：<input name="city" type="text" value="{{item.city}}" />
+        </view>
+        <view class="content">
+            联系电话：<input name="phone" type="text" value="{{item.phone}}" />
+        </view>
+        <view class="content">
+            电子邮箱：<input name="email" type="text" value="{{item.email}}" />
+        </view>
+        <view class="content">
+            个人介绍：<input name="description" type="text" value="{{item.description}}" />
+        </view>
+        <view class="layout">
+            <button form-type="submit">编辑</button>
+            <button form-type="reset">重置</button>
+        </view>
+    </view>
+</form>
+
+
